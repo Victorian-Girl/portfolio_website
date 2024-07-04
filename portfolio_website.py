@@ -85,7 +85,7 @@ st.title("Gallery")                                                             
 col1, col2, col3 = st.columns(3)                                                        # Creating 3 columns in the layout
 
 with col1:                                                                              # Adding content to the first column
-    st.image("images/g1.jpg")                                                           # Adding an image
+    st.image("images/g1.1.jpg")                                                           # Adding an image
     st.image("images/g2.jpg")
     st.image("images/g3.jpg")
 
