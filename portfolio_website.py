@@ -76,9 +76,14 @@ st.image("images/setup.jpg")                                                    
 st.write(" ")
 st.title("My Skills")                                                                   # Adding a title
 st.slider("Programming", 0, 100, 55)                                                    # Adding a slider
+
 st.slider("Painting", 0, 100, 75)                                                       # Adding a slider
 st.slider("Studying", 0, 100, 80)                                                       # Adding a slider
-
+st.slider("Python", 0, 100, 90)                                                         # Adding a slider
+st.slider("Html", 0, 100, 50)                                                           # Adding a slider
+st.slider("Css", 0, 100, 50)                                                            # Adding a slider
+st.slider("JavaScript", 0, 100, 35)                                                     # Adding a slider
+st.slider("Adobe Ilustrator/Svija", 0, 100, 25)                                         # Adding a slider
 st.write(" ")
 st.title("Gallery")                                                                     # Adding a title
 
