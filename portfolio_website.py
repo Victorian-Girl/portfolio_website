@@ -85,19 +85,19 @@ st.title("Gallery")                                                             
 col1, col2, col3 = st.columns(3)                                                        # Creating 3 columns in the layout
 
 with col1:                                                                              # Adding content to the first column
-    st.image("images/g1.1.jpg")                                                           # Adding an image
+    st.image("images/g.jpg")                                                           # Adding an image
+    st.image("images/g1.jpg")
     st.image("images/g2.jpg")
-    st.image("images/g3.jpg")
 
 with col2:                                                                              # Adding content to the second column
-    st.image("images/g4.jpg")                                                           # Adding an image
+    st.image("images/g3.jpg")                                                           # Adding an image
+    st.image("images/g4.jpg")
     st.image("images/g5.jpg")
-    st.image("images/g6.jpg")
 
 with col3:                                                                              # Adding content to the third column
     st.image("images/g7.jpg")                                                           # Adding an image
+    st.image("images/g3.jpg")
     st.image("images/g8.jpg")
-    st.image("images/g9.jpg")
 
 st.subheader(" ")                                                                       # Adding a subheader
 st.write("CONTACT")                                                                     # Adding a text
