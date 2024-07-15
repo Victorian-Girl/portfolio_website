@@ -2,7 +2,7 @@ import streamlit as st                                                          
 import google.generativeai as genai                                                     # Importing the GenAI library
 
 api_key = st.secrets["GOOGLE_API_KEY"]                                                  # Getting the API key from the secrets
-#api_key = ""
+# api_key = ""
 genai.configure(api_key=api_key)                                                        # Configuring the GenAI library
 model = genai.GenerativeModel('gemini-1.5-flash')                                       # Creating a GenerativeModel object
 
@@ -21,8 +21,9 @@ st.title(" ")
 
 persona = """
         You are Mélissa AI bot. You help people answer questions about yourself (i.e Mélissa)
-        Answer as if you are responding . dont answer in second or third person.
+        Answer as if you are responding . Dont answer in second or third person.
         If you don't know they answer you simply say "That's a secret"
+        If we ask you "tell me more", "tell me about you", then you will ask "What topics: programming or painting?"
         Here is more info about Mélissa: 
 
         Melissa Christiaenssens is an Artist/Programmer. 
@@ -53,19 +54,23 @@ persona = """
         Melissa is also a self-taught person, she devotes several hours per week to her learning,
         knowledge, problem solving and trying new techniques.
         
-        She is currently studying programming, mainly the Python language.
-        
+        Curious about how programs work and how they are made, she started learning programming in 2019. 
+        She is passionate about desktop and web applications. 
+
+        She also has a great interest in computer vision, an exciting field where she can combine her artistic talents and technical skills. 
+        She wants to make computer vision her niche, as well as having interests in AI and speech recognition.
+
+        She is currently studying programming, mainly the Python language. 
         She has obtained programming certificates from Udemy.com and also from C.V.Zone.
-        
+
         In terms of programming, Melissa has in-depth skills in Python (60%),
         an intermediate knowledge in HTML and CSS (40%) as well as some expertise in JavaScript (25%). 
         She also uses Adobe Illustrator and Svija software for web design.
-        
-        Her specialty and the niche she is targeting is computer vision,
-        an exciting field where she can combine her artistic talents and technical skills.
-        
-        Mélissa currently undergoing a career transition. 
-        Mélissa available for new challenges and seeking an engaging employment opportunity.
+
+        She offers you these personalized services to realize your projects.
+
+        Melissa is currently undergoing a career transition. 
+        Melissa is available for new challenges and seeking an engaging employment opportunity.
 
 
         Mélissa's Artist Email: mcrist.artiste@gmail.com
@@ -105,11 +110,12 @@ st.title(" ")
 col1, col2 = st.columns(2)                                                              # Creating 2 columns in the layout
 with col1:                                                                              # Adding content to the first column
     st.subheader("My artist web site")                                                  # Adding a subheader
-    st.write("- Made with Adobe Illustrator")                                           # Adding a text
+    st.write("- Also made with Adobe Illustrator")                                      # Adding a text
     st.write("- And a wonderfully app name Svija")                                      # Adding a text
     st.write("- Come see my art")                                                       # Adding a text
-    st.write("- Know me better")                                                        # Adding a text
-    st.write("- I'm am a programmer, but also a artist")                                # Adding a text
+    st.write("- Abstract, realism, expressionism,")                                     # Adding a text
+    st.write("- are my influences")                                                     # Adding a text
+    st.write("- I'm am a artist, but also a programmer")                                # Adding a text
 
 with col2:                                                                              # Adding content to the second column
     st.write("https://mcrist.artiste.svija.site/")                                      # Adding a video
